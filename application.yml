@@ -19,4 +19,4 @@ spring:
     show-sql: true
 
   config:
-    import: optional:configserver:http://config-server:8887
+    import: optional:configserver:http://config-server:8888
