@@ -44,6 +44,11 @@ spring:
           predicates:
             - Path=/expenses/**
 
+        -id: income-service
+          uri: lb://expense-service
+          predicates:
+            - Path=/income/**
+
 # =========================
 # Logging (Very helpful)
 # =========================
