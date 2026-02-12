@@ -44,10 +44,7 @@ spring:
           predicates:
             - Path=/expenses/**, /income/**
 
-        - id: income-service
-          uri: http://localhost:8082
-          predicates:
-            - Path=/income/**
+       
 
 # =========================
 # Logging (Very helpful)
