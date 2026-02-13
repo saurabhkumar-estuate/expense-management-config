@@ -47,7 +47,7 @@ spring:
         - id: income-route
           uri: http://localhost:8082
           predicates:
-            - Path=/income/**
+            - Path=/income, /income/**
 
         
 
