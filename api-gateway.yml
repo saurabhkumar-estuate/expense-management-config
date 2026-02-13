@@ -19,13 +19,13 @@ spring:
     gateway:
 
       # Global filters applied to all routes
-      #default-filters:
-        # Redis-based rate limiter
-       # - name: RequestRateLimiter
-          #args:
-            #redis-rate-limiter.replenishRate: 5     # 5 requests per second
-            #redis-rate-limiter.burstCapacity: 10    # sudden burst allowed
-            #key-resolver: "#{@userKeyResolver}"
+      default-filters:
+         Redis-based rate limiter
+        - name: RequestRateLimiter
+          args:
+            redis-rate-limiter.replenishRate: 5     # 5 requests per second
+            redis-rate-limiter.burstCapacity: 10    # sudden burst allowed
+            key-resolver: "#{@userKeyResolver}"
 
       routes:
         # =========================
